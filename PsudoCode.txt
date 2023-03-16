@@ -1,0 +1,31 @@
+// inisiasi
+namaPasien = ""
+alamatPasien = ""
+nomorKamar = 1
+statusKamar = ""
+statusSimpan = ""
+
+// menampilkan form *
+READ AND WRITE "namaPasien" with string
+STORE "namaPasien" with "Marshall D. Budi"
+
+READ AND WRITE "alamatPasien" with string
+STORE "alamatPasien" with "East Blue"
+
+// Memilih Nomor Kamar **
+
+while "statusKamar" from "nomorKamar" == Kosong 
+    ADD "nomorKamar" by 1
+    
+PRINT "nomorKamar"
+
+READ AND WRITE "statusSimpan" with string
+STORE "statusSimpan" with "y"
+
+if statusSimpan == 'y' Do
+    PRINT "Data Tersimpan"
+elseif statusSimpan == 'n' Do
+    PRINT "Data berhasil terreset"
+    // goto >> Menampilkan form *
+
+//END
